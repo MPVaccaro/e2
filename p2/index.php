@@ -6,7 +6,7 @@
 </head>
 <body>
 	<h1>Practice Application</h1>
-	<p>test</p>
+	<p>p2 test</p>
         <img src="images/MPV_headshot.png" alt="Mary Vaccaro" />
 </body>
 </html>
