@@ -1,12 +1,12 @@
-
-# Project 1
+# Project 2
 + By: Mary Vaccaro
-+ Production URL: <http://p1.yourdomain.com>
++ Production URL: [p2.junkpileart.com](http://p2.junkpileart.com)
+
+## Game planning
+I will put my game plan here.
 
 ## Outside resources
-n/a
+
 
 ## Notes for instructor
-n/a
-
 
