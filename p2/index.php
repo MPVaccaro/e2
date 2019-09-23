@@ -15,10 +15,11 @@
     
     <h3>Mechanics</h3>
 	<ul>
-        <li>Player A does this</li>
-        <li>Player B does that</li>
-        <li>Player A does this</li>
-        <li>Player B does that</li>
+        <li>There are four players lined up in a row ready to perform Kung Fu forms.</li>
+        <li>Each player has a two-third chance to perform a Kung Fu form properly, and a one-third chance of doing it incorrectly.</li>
+        <li>Players who do the form correctly move on to the next form. Players who do the form incorrectly stop where they are.</li>
+        <li>There are a total of nine tries per player to be attempted.</li>
+        <li>The player who performs the most forms wins. If two or more players reach the same form it is a tie and both win.</li>
     </ul>   
  
     <h3>Results</h3>
