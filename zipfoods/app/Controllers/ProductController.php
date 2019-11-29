@@ -142,7 +142,7 @@ class ProductController extends Controller
         $price = $this->app->input('price');
         $available = $this->app->input('available');
         $weight = $this->app->input('weight');
-        $perishable = $this->app->input('perishable');
+        $perishable = (int)$this->app->input('perishable');
         
         
         #insert into the database
