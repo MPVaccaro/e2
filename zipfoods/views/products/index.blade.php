@@ -23,6 +23,11 @@
 
     @endforeach
     
-    </div>    
-
+    </div>
+        <p>
+        <br>
+           
+        <a href='/products/new'>&larr; Have a new product to add?</a>
+        </p>
 @endsection
+

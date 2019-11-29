@@ -76,7 +76,7 @@ class ProductController extends Controller
         
         $this->app->validate([
         'name' => 'required',
-        'content' => 'required|minLength:200', 
+        'content' => 'required|minLength:100', 
         # Note how multiple validation rules are separated by a |
         # Note that some rules accept paramaters, which follow a :
 ]);
@@ -94,13 +94,76 @@ class ProductController extends Controller
         
         # To do: Persist the review to the database, then display a confirm message  
         $this->app->db()->insert('reviews', $data); 
-        # Send the user back to theproduct page with a confirmationName.
+        # Send the user back to the product page with a confirmationName.
         $this->app->redirect('/product?id='.$id, ['confirmationName' => $name]);
         
 //        dump($name);
 //        dump($review);
 //        dump($id);
        
+    }
+    
+    public function newProduct()
+    {
+//   return 'Insert a new product here...';
+        return $this->app->view('products.new' );  
+
+    }
+
+    public function saveNewProduct()
+    
+    {
+        
+//        dump($_POST); 
+//        $id = $this->app->input('id');
+//        $_POST['name'];
+//        $_POST['description'];
+//        $_POST['price'];
+//        $_POST['available']; 
+//        $_POST['weight'];
+//        $_POST['perishable'];       
+        
+        
+        
+//        $this->app->validate([
+//        'name' => 'required',
+//        'content' => 'required|minLength:100', 
+//        # Note how multiple validation rules are separated by a |
+//        # Note that some rules accept paramaters, which follow a :
+//]);
+//
+//        
+//        $confirmationName = $this->app->old('confirmationName');
+        
+        
+        $id = $this->app->input('id');
+        $name = $this->app->input('name');
+        $description = $this->app->input('description');
+        $price = $this->app->input('price');
+        $available = $this->app->input('available');
+        $weight = $this->app->input('weight');
+        $perishable = $this->app->input('perishable');
+        
+        
+        #insert into the database
+        $data = [
+            'name' => $name,
+            'description' => $description,
+            'price' => $price,
+            'available' => $available,
+            'weight' => $weight,
+            'perishable' => $perishable,           
+        ];
+//        
+//        dump($name);
+//        dump($description);
+//        dump($id);
+        
+//        # To do: Persist the review to the database, then display a confirm message  
+        $this->app->db()->insert('products', $data); 
+        # Send the user back to the product page with a confirmationName.
+        $this->app->redirect('/products');
+//        
     }
     
 }

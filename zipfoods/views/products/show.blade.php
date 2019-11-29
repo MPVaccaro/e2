@@ -57,9 +57,7 @@ Thank you, {{ $confirmationName }}, for your review!
     Write the first review!
     @endif
     
-</div>
-    
-</div>
+</div>  
 
     <a href='/products'>&larr; Return to all products</a>
 
