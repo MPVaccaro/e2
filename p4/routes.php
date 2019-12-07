@@ -8,7 +8,7 @@ return [
     '/game' => ['AppController', 'game'],
     '/reasons' => ['AppController', 'reasons'],
     '/reasonform' => ['AppController', 'reasonform'],
-    '/reasonlist' => ['AppController', 'reasonlist'],
+    '/resultslist' => ['AppController', 'resultslist'],
     '/products' => ['ProductController', 'index'],
     '/product' => ['ProductController', 'show'],
     '/products/save-review' => ['ProductController', 'saveReview'],

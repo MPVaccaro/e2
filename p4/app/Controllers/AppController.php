@@ -28,16 +28,22 @@ class AppController extends Controller
     
     public function reasons()
     {
-        return $this->app->view('reasons');
+        $reasons = $this->app->db()->all('reasons');
+        
+        return $this->app->view('reasons', ['reasons' => $reasons]);
+        
+//        dump($reasons);
+        
+//        return $this->app->view('reasons');
     }
     
         public function reasonform()
     {
         return $this->app->view('reasonform');
     }
-    public function reasonlist()
+    public function resultslist()
     {
-        return $this->app->view('reasonlist');
+        return $this->app->view('resultslist');
     }
 
     
