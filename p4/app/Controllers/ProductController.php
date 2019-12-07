@@ -1,7 +1,7 @@
 <?php
 namespace App\Controllers;
 
-//use App\Products;
+
 
 class ProductController extends Controller
 {
@@ -10,58 +10,45 @@ class ProductController extends Controller
     public function __construct($app)
     
     { 
-            parent::__construct($app);
-        
-//            $this->products = new Products($this->app->path('database/products.json'));
+            parent::__construct($app);   
     }
         
     public function index()
     {        
-//        dump($products);
-        
-//        return 'Show all the products here...';
-        
-//        $products = new Products($this->app->path('database/products.json'));
-        
            return $this->app->view('products.index', ['products' => $products = $this->app->db()->all('products')]);
     }
     
    
     public function show() 
     {
-        
-//        $products = new Products($this->app->path('database/products.json'));
-//        return 'Show details for an individual product...';
-        
-        
-        $id = $this->app->param('id');
-        
-        if(is_null($id))
-        {
-            
-           $this->app->redirect('/products');
-        }
+//        $id = $this->app->param('id');
+//        
+//        if(is_null($id))
+//        {            
+//           $this->app->redirect('/products');
+//        }
         
 //        $product = $this->products->getById($id);
-        $product = $this->app->db()->findById('products', $id);
+//        $product = $this->app->db()->findById('products', $id);
         
 //        dump($product);
-        if (is_null($product))
-            {
-            return $this->app->view('products.missing', [ 'id' => $id ]);
-            } 
+//        if (is_null($product))
+//            {
+//            return $this->app->view('products.missing', [ 'id' => $id ]);
+//            } 
+//        
+//        #load the review details
         
-        #load the review details
+        $reasons = $this->app->db()->all('reasons');
+//        $reasons = $this->app->db()->findById('reasons', $id);
         
-        $reviews = $this->app->db()->findByColumn('reviews', 'product_id', '=', $id);
-        
-//        dump($reviews);
+//        dump($reasons);
         
         $confirmationName = $this->app->old('confirmationName');
         
-        return $this->app->view('products.show', [ 
-            'product' => $product,
-            'reviews' => $reviews,
+        return $this->app->view('index', [ 
+//            'reason' => $reason,
+            'reasons' => $reasons,
             'confirmationName' => $confirmationName 
         ]); 
     }
@@ -76,26 +63,32 @@ class ProductController extends Controller
         
         $this->app->validate([
         'name' => 'required',
-        'content' => 'required|minLength:100', 
+        'content' => 'required|minLength:30', 
         # Note how multiple validation rules are separated by a |
         # Note that some rules accept paramaters, which follow a :
 ]);
         
         $name = $this->app->input('name');
         $content = $this->app->input('content');
-        $id = $this->app->input('id');
+//        $id = $this->app->input('id');
         
         #insert into the database
         $data = [
             'name' => $name,
             'content' => $content,
-            'product_id' => $id,
+//            'product_id' => $id,
         ];
         
         # To do: Persist the review to the database, then display a confirm message  
-        $this->app->db()->insert('reviews', $data); 
+        $this->app->db()->insert('reasons', $data); 
         # Send the user back to the product page with a confirmationName.
         $this->app->redirect('/product?id='.$id, ['confirmationName' => $name]);
+//        $this->app->redirect('/game', ['confirmationName' => $name]); 
+
+//        $this->app->redirect('/game');
+
+//        $this->app->redirect('/game);
+
         
 //        dump($name);
 //        dump($review);
@@ -107,13 +100,11 @@ class ProductController extends Controller
     {
 //   return 'Insert a new product here...';
         return $this->app->view('products.new' );  
-
     }
 
     public function saveNewProduct()
     
-    {
-        
+    {        
 //        dump($_POST); 
 //        $id = $this->app->input('id');
 //        $_POST['name'];
@@ -142,8 +133,7 @@ class ProductController extends Controller
         $price = $this->app->input('price');
         $available = $this->app->input('available');
         $weight = $this->app->input('weight');
-//        $perishable = (int)$this->app->input('perishable');
-        $perishable = $this->app->input('perishable');
+        $perishable = (int)$this->app->input('perishable');
         
         
         #insert into the database
