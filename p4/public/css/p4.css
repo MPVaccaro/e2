@@ -24,6 +24,10 @@ header {
 /*----------------------------------------------------
 Misc
 -----------------------------------------------------*/
+ul {
+    list-style-type: none;
+}
+
 ul.error {
     list-style-type: none;
 }
@@ -69,7 +73,7 @@ Product Show
 
 #product-review {
     margin: 20px 0;
-    background-color: #f6f7f7;
+    background-color: #e6ffff;
     padding: 10px;
 }
 

@@ -8,12 +8,9 @@ return [
     '/game' => ['AppController', 'game'],
     '/reasons' => ['AppController', 'reasons'],
     '/reasonform' => ['AppController', 'reasonform'],
+    '/save-new-reason' => ['AppController', 'saveNewReason'],
+    '/reasonform' => ['AppController', 'reasonform'],
+    '/reasondetails' => ['AppController', 'reasondetails'],
     '/resultslist' => ['AppController', 'resultslist'],
-    '/products' => ['ProductController', 'index'],
-    '/product' => ['ProductController', 'show'],
-    '/products/save-review' => ['ProductController', 'saveReview'],
-    '/products/new' => ['ProductController', 'newProduct'],
-    '/products/save-new-product' => ['ProductController', 'saveNewProduct'],
-    '/practice' => ['AppController', 'practice'],
-    '/practice2' => ['AppController', 'practice2'],
+
 ];

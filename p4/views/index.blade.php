@@ -6,6 +6,7 @@ Home
 
 @section('content')
 
+<!--
 @if($app->errorsExist())
 <ul class='error alert alert-danger'>
     @foreach($app->errors() as $error)
@@ -17,15 +18,17 @@ Home
 Thank you, {{ $confirmationName }}, for your reason!
 </div>    
 @endif 
+-->
     
 <!--    <h2>{{ $welcome }}</h2>-->
 
     <p>Welcome to the index page! This is the boilerplate splash page for my application built with  <a href='https://github.com/susanBuck/e2framework'>e2framework</a>.</p>
 
     
+<!--
      <form method='POST' id='product-review' action='/products/save-review'>
         <h3>Tell Us Your Reason for Trying Tai Chi</h3>
-<!--        <input type='hidden' name='id' value='{{ $product["id"] }}'>-->
+        <input type='hidden' name='id' value='{{ $product["id"] }}'>
         <div class='form-group'>
             <label for='name'>Your Name</label>
             <input type='text' class="form-control" name='name' id='name' value='{{ $app->old("name") }}'>
@@ -38,9 +41,14 @@ Thank you, {{ $confirmationName }}, for your reason!
 
         <button type='submit' class='btn btn-primary'>Submit Reason</button>
     </form>
+-->
     
-    <h3>Reasons</h3>
+    <h3>Welcome to Your Tai Chi Game</h3>
 
+    <p>  <a href='/reasons'>&larr; See the Reasons People are trying Tai Chi</a>
+    </p>    
+
+<!--
     @if($reasons)
 
     @foreach($reasons as $reason)
@@ -51,6 +59,7 @@ Thank you, {{ $confirmationName }}, for your reason!
     </div>    
     
     @endforeach
+-->
 
 
     @else

@@ -82,8 +82,8 @@ class ProductController extends Controller
         # To do: Persist the review to the database, then display a confirm message  
         $this->app->db()->insert('reasons', $data); 
         # Send the user back to the product page with a confirmationName.
-        $this->app->redirect('/product?id='.$id, ['confirmationName' => $name]);
-//        $this->app->redirect('/game', ['confirmationName' => $name]); 
+//        $this->app->redirect('/product?id='.$id, ['confirmationName' => $name]);
+        $this->app->redirect('/game', ['confirmationName' => $name]); 
 
 //        $this->app->redirect('/game');
 
