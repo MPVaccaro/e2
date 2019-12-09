@@ -1,6 +1,34 @@
 /*----------------------------------------------------
 Master view
 -----------------------------------------------------*/
+
+/* 
+Colors ** used
+
+:
+#e6f7ff; #light blue background used for form
+
+#0b9f0b forest green**
+#e7fde7 light green taken from forest green
+#245fee regular blue
+#163885 dark blue **
+#e6f7ff light blue for form background
+#f2f2f2 light grey for blockquote background
+#cccccc medium light grey for blockquote borders
+#c60d0d red for required
+
+PREVIOUSLY USED COLORS FROM OTHER PROJECTS:
+#e7fdfd very light aqua for background contact box background*
+#b8faf9 light aqua from photo**
+#11eeeb medium light aqua
+#0fd7d3 medium aqua**
+#0dbfbc slightly darker medium aqua
+#0ca7a4 medium dark aqua used for main hyperlinks
+#0a8f8d dark aqua
+#087775 darker aqua** used for menu background
+
+*/
+
 main {
     max-width: 800px;
     width: 100%;
@@ -34,9 +62,9 @@ ul.error {
 
 
 /*----------------------------------------------------
-Product index
+photo index
 -----------------------------------------------------*/
-#product-index .product {
+#photo-index .photo {
     text-align: center;
     margin: auto;
     margin-bottom: 20px;
@@ -44,45 +72,246 @@ Product index
     border-top: 1px solid #eee;
 }
 
-#product-index .product-name {
+#photo-index .photo-name {
     margin-top: 20px;
     font-weight: bold;
 }
 
-#product-index .product-thumb {
+#photo-index .photo-thumb {
     width: 100px;
 }
 
 
 /*----------------------------------------------------
-Product Show
+photo Show
 -----------------------------------------------------*/
-#product-show .product-image {
+#photo-show .photo-image {
     width: 200px;
 }
 
-#product-show .product-description {
+#photo-show .photot-description {
     padding: 10px;
     font-size: 1.1rem;
     font-style: italic;
 }
 
-#product-show .product-price {
+#photo-show .photo-price {
     font-size: 1.1rem;
 }
 
-#product-review {
+#form {
     margin: 20px 0;
-    background-color: #e6ffff;
+    background-color: #e7fde7; /*form background color*/
     padding: 10px;
 }
 
-#product-review input[type=text] {
+#form input[type=text] {
     text-align: center;
     width: 50%;
     margin: auto;
 }
 
-#product-review textarea {
+#form textarea {
     height: 150px;
 }
+
+
+/*----------------------------------------------------
+navigation and css menu (used old template, now customized)
+
+-----------------------------------------------------*/
+
+.navigation {
+ 
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  -webkit-flex-flow: row wrap;
+  justify-content: center; /*use flex-start for left align*/
+}
+
+.navigation a {
+  
+  display: block;
+  padding: 1em;
+}
+
+.navigation a:hover {
+}
+
+ @media all and (max-width: 800px) {
+  .navigation {
+    justify-content: flex-start;
+  } 
+}
+
+ @media all and (max-width: 600px) {
+  .navigation {
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+    padding: 0;
+  }
+  
+
+  .navigation a { 
+    text-align: center; 
+    padding: 10px;
+    border-top: 1px solid rgba(255,255,255,0.3); 
+    border-bottom: 1px solid rgba(0,0,0,0.1); 
+  }
+
+  
+  .navigation li:last-of-type a {
+    border-bottom: none;
+  }
+}
+
+
+
+#cssmenu {
+  width: auto;
+}
+#cssmenu,
+#cssmenu ul,
+#cssmenu ul li,
+#cssmenu ul li a {
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: #ffffff; /*main text color*/
+  -webkit-transition: all ease .3s;
+  -o-transition: all ease .3s;
+  -moz-transition: all ease .3s;
+  -ms-transition: all ease .3s;
+  transition: all ease .3s;
+}
+#cssmenu:before,
+#cssmenu:after,
+#cssmenu > ul:before,
+#cssmenu > ul:after {
+  content: "";
+  display: table;
+}
+#cssmenu:after,
+#cssmenu > ul:after {
+  clear: both;
+}
+#cssmenu a {
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+#cssmenu ul {
+  background: #163885; /*main menu bar background color*/
+  border-radius: 5px; /*adding to this makes a curve at the end of the menu bar*/
+  border: 2px solid #489689; /*border color*/
+}
+#cssmenu ul > li {
+  float: left;
+  list-style: none;
+}
+#cssmenu ul > li > a {
+  display: block;
+  text-decoration: none;
+  padding: 10px 25px;
+  position: relative;
+}
+#cssmenu ul > li > a:hover {
+  background: #0b9f0b; /*main background highlighted color*/
+  color: #ffffff; /*white*/
+  -webkit-box-shadow: inset 10 10 10px #1e2e4f; /*almost black blue*/
+  -o-box-shadow: inset 0 0 1px #1e2e4f;
+  -moz-box-shadow: inset 0 0 1px #1e2e4f;
+  -ms-box-shadow: inset 0 0 1px #1e2e4f;
+  box-shadow: inset 0 0 1px #1e2e4f;
+  -webkit-transition: all ease .3s;
+  -o-transition: all ease .3s;
+  -moz-transition: all ease .3s;
+  -ms-transition: all ease .3s;
+  transition: all ease .3s;
+}
+#cssmenu ul > li > a:hover:before {
+  content: "";
+  z-index: 2;
+  position: absolute;
+  border: 1px solid white;
+  border-top: 0;
+  border-bottom: 0;
+  border-right: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: -1px;
+  opacity: .2;
+}
+#cssmenu ul > li > a:hover:after {
+  content: "";
+  z-index: 2;
+  position: absolute;
+  border: 1px solid white;
+  border-top: 0;
+  border-bottom: 0;
+  border-left: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: -1px;
+  opacity: .2;
+}
+#cssmenu > ul > li > ul {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  z-index: 999;
+}
+#cssmenu > ul > li:hover > ul {
+  opacity: 1;
+  visibility: visible;
+  position: absolute;
+  border-radius: 0 0 3px 3px;
+  -webkit-box-shadow: none;
+  -o-box-shadow: none;
+  -moz-box-shadow: none;
+  -ms-box-shadow: none;
+  box-shadow: none;
+}
+#cssmenu > ul > li > ul {
+  width: 170px;
+  position: absolute;
+}
+#cssmenu > ul > li > ul > li {
+  float: none;
+  position: relative;
+}
+#cssmenu > ul > li > ul > li > ul {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+}
+#cssmenu > ul > li > ul > li:hover > ul {
+  opacity: 1;
+  visibility: visible;
+  position: absolute;
+}
+#cssmenu > ul > li > ul > li > ul {
+  left: 150px;
+  top: 1px;
+  width: 170px;
+}
+#cssmenu > ul > li > ul > li > ul > li {
+  float: none;
+}
+
+/* "I am here" nav links marker- NOT USED IN THIS WEBSITE*/
+
+
+nav ul li#iamhere a,
+nav ul li#iamhere a:link,
+nav ul li#iamhere a:visited,
+nav ul li#iamhere a:hover { color: #ffffff; background-color: #163885; border: thin solid #4b9b27;}
+
+nav ul li { margin-bottom: 0; margin-top: 0; padding-top: 0; padding-bottom: 0;}

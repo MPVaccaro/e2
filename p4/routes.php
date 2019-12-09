@@ -2,15 +2,15 @@
 
 return [
     '/' => ['AppController', 'index'],
-//    '/reasons' => ['AppController', 'index'],
     '/contact' => ['AppController', 'contact'], 
-    '/about' => ['AppController', 'about'],
-    '/game' => ['AppController', 'game'],
+    '/rules' => ['AppController', 'rules'],
     '/reasons' => ['AppController', 'reasons'],
     '/reasonform' => ['AppController', 'reasonform'],
     '/save-new-reason' => ['AppController', 'saveNewReason'],
-    '/reasonform' => ['AppController', 'reasonform'],
     '/reasondetails' => ['AppController', 'reasondetails'],
-    '/resultslist' => ['AppController', 'resultslist'],
-
+    '/game' => ['AppController', 'game'],
+    '/save-new-game' => ['AppController', 'saveNewGame'],
+    '/gameplay' => ['AppController', 'gameplay'],
+    '/results' => ['AppController', 'results'],
+    '/resultdetails' => ['AppController', 'resultdetails'],
 ];

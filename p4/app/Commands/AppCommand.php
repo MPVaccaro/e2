@@ -4,9 +4,7 @@ namespace App\Commands;
 
 class AppCommand extends Command
 {
-    /**
-     * 
-     */
+
     public function test()
     {
         dump('It works! You invoked your first command.');
@@ -15,20 +13,17 @@ class AppCommand extends Command
     public function migrate()
     {
     
-//        $this->app->db()->createTable('game', [
-//            'name' => 'varchar(255)',
-//            'description' => 'text',
-//            'price' => 'decimal(10,2)',
-//            'available' => 'int',
-//            'weight' => 'decimal(10,2)',
-//            'perishable' => 'tinyint(1)'
-//        ]);
-
         $this->app->db()->createTable('reasons', [
             'name' => 'varchar(255)',
             'content' => 'text',
         ]);
 
+        $this->app->db()->createTable('games', [
+            'goal' => 'varchar(255)',
+            'section' => 'varchar(255)',
+            'result' => 'tinyint(1)',    
+        ]);
+       
         dump('Migration complete; check the database for your new data.');
 
     }

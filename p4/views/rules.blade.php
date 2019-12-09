@@ -1,12 +1,12 @@
 @extends('templates.master')
 
 @section('title')
-    Results
+   About
 @endsection
 
 @section('content')
     <body>
-    <p>Here is a List of all Game Results</p>    
+    <p>Rules of the Game</p>    
     </body>
     </html>
 

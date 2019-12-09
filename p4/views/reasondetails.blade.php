@@ -6,6 +6,7 @@
 
 @section('content')
     <body>
+        
     <h2>Details of Reasons</h2>  
     <h4>{{ $reason['name'] }}</h4>
     <p>

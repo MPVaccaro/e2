@@ -10,7 +10,7 @@
     @if($newName)
 
         <div class='alert alert-success'>  
-        Thank you for your reason, {{ $newName }}. Now you can play the game!
+        Thank you for your reason, {{ $newName }}. Now you can play the game!<br> <a href='/game' title="Game"> Click here to begin the game.</a>
         </div>
         
     @endif 
@@ -25,7 +25,7 @@
         
         <p>Reason Form</p>
        
-    <form method='POST' id='product-review' action='/save-new-reason'>
+    <form method='POST' id='form' action='/save-new-reason'>
         <h3>Tell Us Your Reason for Trying Tai Chi</h3>
 
         <div class='form-group'>
@@ -39,25 +39,7 @@
         </div>
 
         <button type='submit' class='btn btn-primary'>Submit Reason</button>
-    </form>     
-        
-<!--
-    @if($reason)
-
-    @foreach($reasons as $reason)
-    
-    <div class='review'>
-        <span class='review-name' ><b>{{ $reason['name'] }}</b></span>
-        <p>{{ $reason['content'] }}</p>
-    </div>    
-    
-    @endforeach
-
-    @else
-    You must tell us your reason for trying Tai Chi in order to play the game!
-    @endif
--->
-       
+    </form>            
         
     </body>
     </html>
