@@ -14,20 +14,17 @@
 
     <body>
         
-    <h3>Here are the Results for all the Games Played</h3>
-
+    <h3>Here are the Results for all Games Played:</h3>
+    <p>
     <ul>
 
         @foreach($games as $game)
             <div class='review'>
             <li>
-                <a href='/resultdetails?id={{ $game['id'] }}'><b>{{ $game['goal'] }} </b></a>
-                <br>
-                 {{ $game['goal'] }} 
-                <br>
-                {{ $game['section'] }} 
-                <br>
-                {{ $game['result'] }}
+                <a href='/resultdetails?id={{ $game['id'] }}'><b>Player # {{ $game['id'] }} </b></a>
+                <br><font color='#cc6600'>Learned {{ $game['section'] }} </font>
+                <br>And is interested in<br> <font color='#cc6600'> {{ $game['goal'] }}</font>
+
             </li>
             <br>
             </div>

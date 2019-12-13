@@ -31,7 +31,7 @@
             <li>
                 <a href='/reasondetails?id={{ $reason['id'] }}'><b>{{ $reason['name'] }} </b></a>
                 <br>
-                {{ $reason['content'] }} 
+                {{ $reason['benefit'] }} 
             </li>
             <br>
             </div>

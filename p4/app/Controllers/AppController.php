@@ -22,12 +22,14 @@ class AppController extends Controller
     {   
         $newName = $this->app->old('newName', null);
         return $this->app->view('reasonform', ['newName' => $newName]);
+        $newName=$_POST['newName'];
     }
     
     public function saveNewReason()
     { 
         $this->app->validate([
             'name' => 'required',
+            'benefit' => 'required',
             'content' => 'required|minLength:30', 
         ]);
         
@@ -36,10 +38,13 @@ class AppController extends Controller
         
         $data = [
         'name' => $this->app->input('name'),
+        'benefit' => $this->app->input('benefit'),    
         'content' => $this->app->input('content'),
         ];
         
         $this->app->db()->insert('reasons', $data);
+        
+//        $this->app->redirect('/game', ['newName' => $data['name']]);        
         
         $this->app->redirect('/reasonform', ['newName' => $data['name']]);        
     }
@@ -54,13 +59,10 @@ class AppController extends Controller
     public function reasondetails()
     {
         $reasonId = $this->app->param('id');
-            
-//        dump($reasonId);
-            
+                        
         $reason = $this->app->db()->findById('reasons', $reasonId);    
  
 //        dump($reason);            
-//        return $this->app->view('reasondetails');
         
         if(is_null($reason))
             {
@@ -80,7 +82,6 @@ class AppController extends Controller
         
         $this->app->validate([
             'goal' => 'required',
-//            'content' => 'required|minLength:30', 
         ]);
                 
         $winner = null;
@@ -93,18 +94,18 @@ class AppController extends Controller
 
             if ($newMove == "The Whole Form!!") 
                 {
-                    $winner = '1';
+                    $winner = 'Is Ready for the Next Goal';
                 } 
             else 
                 {
-                    $winner = '0';
+                    $winner = 'Is Ready for the Next Move in the Tai Chi Form';
                 }
 
-        dump ($winner);                
-        dump ($newMove);
-        dump ($winner);
+    
+//        dump ($newMove);
+//        dump ($winner);
         
-        $data = [
+        $data = [  
         'goal' => $this->app->input('goal'),
         'section' => $newMove,
         'result' => $winner,           
@@ -112,8 +113,9 @@ class AppController extends Controller
         
         $this->app->db()->insert('games', $data);
 
-//        $this->app->redirect('/results');       
-//        $this->app->redirect('/reasonform', ['newName' => $data['name']]);    
+        $this->app->redirect('/results');  
+        
+//        $this->app->redirect('/save-new-game', ['newName' => $data['name']]);    
     }
     
     public function gameplay()
@@ -132,8 +134,8 @@ class AppController extends Controller
         if(is_null($game))
             {
             return $this->app->redirect('results', ['gameNotFound' => true]);
-            }                
-            
+            }                        
+        
         return $this->app->view('resultdetails', ['game' => $game]);
     }   
         
