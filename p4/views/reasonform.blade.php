@@ -10,8 +10,8 @@
     @if($newName)
 
         <div class='alert alert-success'>  
-        Thank you for your reason, {{ $newName }}.<br>
-        Now you can play the game!<br><b> <a href='/game' title="Game"> Click here to begin the game.</a></b><br>
+        <font color='red'> Thank you for your reason, {{ $newName }}.<br>Now you can play the game!</font><br><br>
+        <h3><a href='/game' title="Game"> Click here to begin the game.</a></h3><br>
         </div>
         
     @endif 
@@ -22,7 +22,8 @@
         <li>{{ $error }}</li>
         @endforeach
         </ul>
-    @endif    
+    @endif  
+        
         <h1>Play Now!
         </h1>    
         <p>In order to play the Tai Chi game, first tell us why you are interested in Tai Chi.<br></p>

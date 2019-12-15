@@ -43,9 +43,7 @@ class AppController extends Controller
         ];
         
         $this->app->db()->insert('reasons', $data);
-        
-//        $this->app->redirect('/game', ['newName' => $data['name']]);        
-        
+             
         $this->app->redirect('/reasonform', ['newName' => $data['name']]);        
     }
     
@@ -74,7 +72,8 @@ class AppController extends Controller
  
     public function game()
     {
-        return $this->app->view('game');
+        
+       return $this->app->view('game');
     }
     
     public function saveNewGame()
@@ -113,16 +112,36 @@ class AppController extends Controller
         
         $this->app->db()->insert('games', $data);
 
-        $this->app->redirect('/results');  
-        
-//        $this->app->redirect('/save-new-game', ['newName' => $data['name']]);    
+
+        $this->app->redirect('/myResult');  
+ 
     }
     
-    public function gameplay()
+    
+    public function myresult()
     {
+       
+        $lastGameAdded = $this->app->db()->run('SELECT * FROM games ORDER BY id DESC LIMIT 1')->fetch();
 
-        return 'This will be where the game mechanics are';
-    }
+//    dump($lastGameAdded);
+        
+        #Yesterday's specific code that worked
+//        $myResult = $this->app->db()->findById('games', 131);
+//     
+        return $this->app->view('myResult', ['games' => $lastGameAdded]);
+
+            if(is_null($game))
+                {
+                return $this->app->redirect('games', ['gameNotFound' => true]);
+                }                
+        #end of yesterday's code
+        
+//        dump ($data);
+//        
+//        return $this->app->view('myResult' );
+        
+    }   
+
     
     public function resultdetails()
         
@@ -139,7 +158,7 @@ class AppController extends Controller
         return $this->app->view('resultdetails', ['game' => $game]);
     }   
         
-
+    
     public function results()
     {
         $games = $this->app->db()->all('games');

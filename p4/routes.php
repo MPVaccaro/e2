@@ -13,4 +13,5 @@ return [
     '/gameplay' => ['AppController', 'gameplay'],
     '/results' => ['AppController', 'results'],
     '/resultdetails' => ['AppController', 'resultdetails'],
+    '/myResult' => ['AppController', 'myresult']
 ];

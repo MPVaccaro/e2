@@ -15,32 +15,20 @@
     <body>
         
     <h3>Here are the Reasons People Want to try Tai Chi</h3>
-    
-<!--        the below avoids the error message:-->    
-<!--    <?php dump($reasons) ?>  -->
-   
-
-<!--        the below phrase will give a warning due to the curly brackets-->
-        
-<!--        {{ dump($reasons) }}-->
-
-    <ul>
+    <p><i>(Click the link to see the full comments.)</i>
+    </p>
 
         @foreach($reasons as $reason)
-            <div class='review'>
-            <li>
+            <p>   
+                <div class='review'>
                 <a href='/reasondetails?id={{ $reason['id'] }}'><b>{{ $reason['name'] }} </b></a>
                 <br>
                 {{ $reason['benefit'] }} 
-            </li>
-            <br>
+                <br>
+            </p>        
             </div>
         @endforeach
-     </ul>
-
-       
-       
-      
+             
     </body>
     </html>
 
