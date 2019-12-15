@@ -32,9 +32,9 @@
 </header>
 
 <main>
-@yield('content')
+@yield('body')
 </main>
 
-@yield('body')
+<!--@yield('body')-->
 </body>
 </html>

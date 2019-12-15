@@ -5,7 +5,7 @@
 @endsection
 
 @section('body')
-        
+    <main> 
         <img src="images/MonarchButterfly.jpg" alt="Monarch Butterfly" width="100" /> 
         <h1>Game</h1>
             
@@ -57,7 +57,7 @@
             <button type='submit'>Click here to take your Tai Chi class
             </button>
         </form> 
-        
+       </main> 
     </html>
 
 @endsection
