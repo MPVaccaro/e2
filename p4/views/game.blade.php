@@ -58,6 +58,5 @@
             </button>
         </form> 
        </main> 
-    </html>
 
 @endsection

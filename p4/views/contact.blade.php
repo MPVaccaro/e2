@@ -16,8 +16,8 @@
 
         <h4>Location</h4>
         <p>
-        365 Canal Street, #3B<br>
-        New York, New York 10013</b><br>
+        <font color='#cc6600'><b>365 Canal Street, #3B<br>
+        New York, New York 10013</b></font><br>
         Between West Broadway and Wooster Street<br>
         Ring buzzer #3A (at the left side of the door)<br>
         3rd floor walk up<br>
