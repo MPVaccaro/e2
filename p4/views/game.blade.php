@@ -5,8 +5,6 @@
 @endsection
 
 @section('body')
-
-    <body>
         
         <img src="images/MonarchButterfly.jpg" alt="Monarch Butterfly" width="100" /> 
         <h1>Game</h1>
@@ -60,7 +58,6 @@
             </button>
         </form> 
         
-    </body>
     </html>
 
 @endsection
