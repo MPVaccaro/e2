@@ -4,7 +4,7 @@
     Game
 @endsection
 
-@section('content')
+@section('body')
 
     <body>
         
