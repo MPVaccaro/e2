@@ -8,7 +8,7 @@
     <body>
         <h1>Tai Chi Class Info</h1>
 
-        <p><br><b><font color='#cc6600'>You are Invited to Try One Free Class!</b></font><br>
+        <p><br><b><font color='#cc6600'>You are Invited to Try One Free Class!</font></b><br>
         <font color = "green">To arrange your free class, contact us at:<br>
         mary@nabisu.com<br>
         212 925-5536<br></font>
