@@ -20,15 +20,15 @@
 
     @foreach($games as $game)
         <div class='review'>   
-        <p>
         <a href='/resultdetails?id={{ $game['id'] }}'><b>Game # {{ $game['id'] }} </b></a>
         <br>This Tai Chi Student Learned<br><b id="special1" > {{ $game['section'] }} </b>
         <br>And is interested in<br><b id="special2"> {{ $game['goal'] }}</b> 
         <br>
-        <hr>       
-        </p>    
+        <hr>         
         </div>
     @endforeach
+
     <a href='/'>&larr; Go back to the home page.</a> 
+
     </main>
 @endsection

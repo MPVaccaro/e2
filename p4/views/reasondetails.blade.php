@@ -16,8 +16,6 @@
     <p>
     {{ $reason['content'] }}
     </p>    
-    <p><a href='/reasons'>&larr; Go back to the reasons list.</a>
-    </p>
-        
+    <br><a href='/reasons'>&larr; Go back to the reasons list.</a>    
     </main>
 @endsection

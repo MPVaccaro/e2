@@ -25,9 +25,9 @@
                 <a href='/reasondetails?id={{ $reason['id'] }}'><b>{{ $reason['name'] }} </b></a>
                 <br>
                 {{ $reason['benefit'] }} 
-                <br>
-            </p>        
-            </div>
+                <br>        
+                </div>
+            </p>
         @endforeach
       <hr>
     <a href='/'>&larr; Go back to the home page.</a> 

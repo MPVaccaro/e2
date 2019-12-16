@@ -10,7 +10,7 @@
         <h3>Here's Your Result:</h3>
         <p>
             <div class='review'>            
-            <font color='red'><b>You Just Learned {{ $games['section'] }} </b></font>           
+            <b id = "special3">You Just Learned {{ $games['section'] }} </b>     
             <br>
             </div>
 
@@ -36,7 +36,7 @@
                 </p>                
     
              @endif
-
+        </p>
         <p>
         <br>
         <hr>    
@@ -136,8 +136,7 @@
                 </p>
                 
             @endif
-                
-        </p>    
+                   
         <p>
         <br>
         <hr>  

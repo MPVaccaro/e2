@@ -68,6 +68,10 @@ ul.error {
 #special2 {
   color: green;  /*used for green highlighted fields*/
 }
+
+#special3 {
+  color: red;  /*used for red highlighted fields*/
+}
 /*----------------------------------------------------
 photo index
 -----------------------------------------------------*/
