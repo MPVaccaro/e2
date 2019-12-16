@@ -4,8 +4,8 @@
     {{ $reason['name'] }}
 @endsection
 
-@section('content')
-    <body>
+@section('body')
+    <main>
         
     <h2>Details of Reasons</h2>  
     <h4>{{ $reason['name'] }}</h4>
@@ -15,10 +15,8 @@
     <p>
     {{ $reason['content'] }}
     </p>    
-    <p>  <a href='/reasons'>&larr; Go back to the reasons list.</a>
-    </p>    
-    </body>
-
-    </html>
-
+    <p><a href='/reasons'>&larr; Go back to the reasons list.</a>
+    </p>
+        
+    </main>
 @endsection

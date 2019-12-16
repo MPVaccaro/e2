@@ -4,15 +4,14 @@
     Results
 @endsection
 
-@section('content')
-
+@section('body')
+    <main>
+        
     @if($app->old('gameNotFound'))
         <div class='alert alert-warning'>    
         Sorry, the game you were looking for is not available.
         </div>    
-    @endif
-
-    <body>
+    @endif 
         
     <h3>Here are the Results for all Games Played:</h3>
     <p><i>(Click the link to get full details about any particular game.)</i>
@@ -30,7 +29,5 @@
         </div>
     @endforeach
       
-    </body>
-    </html>
-
+    </main>
 @endsection

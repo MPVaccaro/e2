@@ -4,8 +4,9 @@
     Contact
 @endsection
 
-@section('content')
-    <body>
+@section('body')
+    <main>
+        
         <h1>Tai Chi Class Info</h1>
 
         <p><br><b><font color='#cc6600'>You are Invited to Try One Free Class!</font></b><br>
@@ -13,7 +14,7 @@
         mary@nabisu.com<br>
         212 925-5536<br></font>
         </p>  
-
+        
         <h4>Location</h4>
         <p>
         <font color='#cc6600'><b>365 Canal Street, #3B<br>
@@ -22,7 +23,7 @@
         Ring buzzer #3A (at the left side of the door)<br>
         3rd floor walk up<br>
         </p>        
-
+       
         <h4>Schedule</h4>
         <p><b>Monday</b><br>
         Tai Chi (Advanced Only): 6:00 pm - 7:30 pm<br>
@@ -51,8 +52,6 @@
         <b>Can't attend the group classes?<br>
         Private classes can be arranged.</b>
         </p>
-
-    </body>
-    </html>
-
+             <img src="images/MonarchButterfly.jpg" alt="Monarch Butterfly" width="50" /> 
+    </main>
 @endsection

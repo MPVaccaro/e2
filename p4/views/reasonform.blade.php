@@ -4,8 +4,8 @@
     ReasonForm
 @endsection
 
-@section('content')
-    <body>
+@section('body')
+    <main>
 
     @if($newName)
 
@@ -62,8 +62,6 @@
         <button type='submit' class='btn btn-primary'>Submit Reason</button>
     </form>            
         
-    </body>
-    </html>
-
+    </main>
 @endsection
 

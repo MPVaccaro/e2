@@ -4,9 +4,8 @@
     MyResult
 @endsection
 
-@section('content')
-
-    <body>
+@section('body')
+    <main>
         
         <h3>Here's Your Result:</h3>
         <p>
@@ -22,7 +21,7 @@
                 Now you're ready to learn the the next move in the Tai Chi form.<br>
                 We'll begin teaching you your new move in your next class.
                 </p>
-                <p><img src="images/Tai-Chi-training_Sept-2019_800px.jpg" alt="Tai Chi Form Practice" width="400" />
+                <p><img src="images/Tai-Chi-training-Sept-2019-800px.jpg" alt="Tai Chi Form Practice" width="400" />
                 </p>                
             
             @elseif ($games['result'] == "Is Ready for the Next Goal") 
@@ -40,10 +39,8 @@
         
         <p>
         <br>        
-            <a href='/results'>See all Game Results &rarr;</a>
+        <a href='/results'>See all Game Results &rarr;</a>
         </p>    
       
-    </body>
-    </html>
-
+    </main>
 @endsection
