@@ -15,7 +15,7 @@
         <p>Each time you come to class, we will teach you a section of the form. Each section of the Tai Chi form consists of many individual moves.</p>
         <p>Below is a list of the main sections you will learn in this class: </p>  
      
-        <font color="#cc6600"><i>
+        <i id=special1 >
         Grasp the Bird's Tail<br> 
         Repulse the Monkey<br>
         Golden Eagle Cools its Wing<br>

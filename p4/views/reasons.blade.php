@@ -19,7 +19,8 @@
     </p>
 
         @foreach($reasons as $reason)
-            <p>   
+            <hr>
+            <p>    
                 <div class='review'>
                 <a href='/reasondetails?id={{ $reason['id'] }}'><b>{{ $reason['name'] }} </b></a>
                 <br>
@@ -28,6 +29,8 @@
             </p>        
             </div>
         @endforeach
-             
+      <hr>
+    <a href='/'>&larr; Go back to the home page.</a> 
+    
     </main>
 @endsection

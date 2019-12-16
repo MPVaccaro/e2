@@ -8,9 +8,10 @@
     <main>
         
     <h2>Details of Reasons</h2>  
+    <br>
     <h4>{{ $reason['name'] }}</h4>
     <p>
-    <font color='#cc6600'>{{ $reason['benefit'] }}</font>
+    <font d="special1">{{ $reason['benefit'] }}</font>
     </p>
     <p>
     {{ $reason['content'] }}

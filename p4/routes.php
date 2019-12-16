@@ -3,7 +3,6 @@
 return [
     '/' => ['AppController', 'index'],
     '/contact' => ['AppController', 'contact'], 
-    '/rules' => ['AppController', 'rules'],
     '/reasons' => ['AppController', 'reasons'],
     '/reasonform' => ['AppController', 'reasonform'],
     '/save-new-reason' => ['AppController', 'saveNewReason'],

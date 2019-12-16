@@ -60,7 +60,14 @@ ul.error {
     list-style-type: none;
 }
 
+#special1 {
+  color: #cc6600;  /*used for orange highlighted fields*/
+}
 
+
+#special2 {
+  color: green;  /*used for green highlighted fields*/
+}
 /*----------------------------------------------------
 photo index
 -----------------------------------------------------*/

@@ -15,19 +15,20 @@
         
     <h3>Here are the Results for all Games Played:</h3>
     <p><i>(Click the link to get full details about any particular game.)</i>
+    <hr>
     </p>
 
     @foreach($games as $game)
-        <div class='review'>
+        <div class='review'>   
         <p>
         <a href='/resultdetails?id={{ $game['id'] }}'><b>Game # {{ $game['id'] }} </b></a>
-        <br>This Tai Chi Student Learned<br><font color='#cc6600'> {{ $game['section'] }} </font>
-        <br>And is interested in<br> <font color='green'> {{ $game['goal'] }}</font> 
+        <br>This Tai Chi Student Learned<br><b id="special1" > {{ $game['section'] }} </b>
+        <br>And is interested in<br><b id="special2"> {{ $game['goal'] }}</b> 
         <br>
-        <br>    
+        <hr>       
         </p>    
         </div>
     @endforeach
-      
+    <a href='/'>&larr; Go back to the home page.</a> 
     </main>
 @endsection

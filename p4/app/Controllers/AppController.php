@@ -33,9 +33,6 @@ class AppController extends Controller
             'content' => 'required|minLength:30', 
         ]);
         
-        # Note how multiple validation rules are separated by a |
-        # Note that some rules accept paramaters, which follow a :
-        
         $data = [
         'name' => $this->app->input('name'),
         'benefit' => $this->app->input('benefit'),    
@@ -44,7 +41,7 @@ class AppController extends Controller
         
         $this->app->db()->insert('reasons', $data);
              
-        $this->app->redirect('/reasonform', ['newName' => $data['name']]);        
+        $this->app->redirect('/reasonform', ['newName' => $data['name']]);       
     }
     
     public function reasons()
@@ -58,9 +55,7 @@ class AppController extends Controller
     {
         $reasonId = $this->app->param('id');
                         
-        $reason = $this->app->db()->findById('reasons', $reasonId);    
- 
-//        dump($reason);            
+        $reason = $this->app->db()->findById('reasons', $reasonId);             
         
         if(is_null($reason))
             {
@@ -91,18 +86,14 @@ class AppController extends Controller
 
         $currentMove = $newMove;
 
-            if ($newMove == "The Whole Form!!") 
-                {
-                    $winner = 'Is Ready for the Next Goal';
-                } 
-            else 
-                {
-                    $winner = 'Is Ready for the Next Move in the Tai Chi Form';
-                }
-
-    
-//        dump ($newMove);
-//        dump ($winner);
+        if ($newMove == "The Whole Form!!") 
+            {
+                $winner = 'Is Ready for the Next Goal';
+            } 
+        else 
+            {
+                $winner = 'Is Ready for the Next Move in the Tai Chi Form';
+            }
         
         $data = [  
         'goal' => $this->app->input('goal'),
@@ -112,36 +103,20 @@ class AppController extends Controller
         
         $this->app->db()->insert('games', $data);
 
-
         $this->app->redirect('/myResult');  
- 
     }
-    
-    
-    public function myresult()
-    {
-       
-        $lastGameAdded = $this->app->db()->run('SELECT * FROM games ORDER BY id DESC LIMIT 1')->fetch();
-
-//    dump($lastGameAdded);
         
-        #Yesterday's specific code that worked
-//        $myResult = $this->app->db()->findById('games', 131);
-//     
+    public function myresult()
+    { 
+        $lastGameAdded = $this->app->db()->run('SELECT * FROM games ORDER BY id DESC LIMIT 1')->fetch();
+     
         return $this->app->view('myResult', ['games' => $lastGameAdded]);
 
-            if(is_null($game))
-                {
-                return $this->app->redirect('games', ['gameNotFound' => true]);
-                }                
-        #end of yesterday's code
-        
-//        dump ($data);
-//        
-//        return $this->app->view('myResult' );
-        
+        if(is_null($game))
+            {
+            return $this->app->redirect('games', ['gameNotFound' => true]);
+            }                
     }   
-
     
     public function resultdetails()
         
@@ -165,13 +140,12 @@ class AppController extends Controller
           
         return $this->app->view('results', ['games' => $games]);
 
-            if(is_null($game))
-                {
-                return $this->app->redirect('games', ['gameNotFound' => true]);
-                }                
+        if(is_null($game))
+            {
+            return $this->app->redirect('games', ['gameNotFound' => true]);
+            }                
             
-        return $this->app->view('resultdetails', ['game' => $game]);
-        
+        return $this->app->view('resultdetails', ['game' => $game]);        
     }
 
 }
