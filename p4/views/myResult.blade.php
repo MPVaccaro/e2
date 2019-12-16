@@ -74,7 +74,7 @@
         
                 <p>The spear is a long, light, flexible, waxwood staff, with a sharp metal tip. (We practice without the sharp metal tip to prevent damage to the floor and each other.) The spear forms incorporate the basic spear moves of thrusts, blocks, strikes and stabs, along with more complex spins and trapping movements. Students learn to coordinate their timing and direction, as they work closely together with long weapons in the dojo<./p>
         
-                <p><img src="images/Spear-Form-August-2018-800px.jpg" alt="Spear Practice" width="200" />
+                <p><img src="images/Spear-Form-August-2018.jpg" alt="Spear Practice" width="200" />
                 </p>
 
             @elseif ($games['goal'] == "Jo (Short Staff)")
