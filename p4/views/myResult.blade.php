@@ -51,14 +51,14 @@
                 
             @elseif ($games['goal'] == "Sabre") 
                
-                <p>The sabre is a curved sword that is sharpened on one side only. Tai Chi sabre form is performed slowly, usually with wooden weapsons. Although done at a slow pace, this form still feels quite "swashbuckling," as it incorporates many large slices and blocks.</p>
+                <p>The sabre is a curved sword that is sharpened on one side only. Tai Chi sabre form is performed slowly, usually with wooden weapons. Although done at a slow pace, this form still feels quite "swashbuckling," as it incorporates many large swings, slices and blocks.</p>
         
                 <p><img src="images/Summer-Tai-Chi-July-17-2019-800px.png" alt="Tai Chi Sabre Practice" width="200" />
                 </p>       
         
             @elseif ($games['goal'] == "Sword")
     
-                <p>The sword is a straight, double-edged weapon with a sharp, pointed tip.<br>The Tai Chi sword form is elaborate and beautiful and is performed slowly, training the student in timing and accuracy. Although commonly performed using wooden weapons, the student learns traditional sword movements. This form has been described as feeling the most "philosophical" of all our martial arts training.</p>
+                <p>The sword is a straight, double-edged weapon with a sharp, pointed tip.<br>The Tai Chi sword form is elaborate and beautiful and is performed slowly, training the student in timing and accuracy. Although commonly performed using wooden weapons, the student learns traditional sword movements. This form has been described as feeling the most "philosophical" of all our martial arts forms.</p>
         
                 <p><img src="images/CMC-Sword-silhouette-Feb-11-2019.jpg" alt="Tai Chi Sword Practice" width="200" />
                 </p>
@@ -72,9 +72,9 @@
                          
             @elseif ($games['goal'] == "Spear")
         
-                <p>The spear is a long, light, flexible, waxwood staff, with a sharp metal tip. (We practice without the sharp metal tip to prevent damage to the floor and each other.) The spear forms incorporate the basic spear moves of thrusts, blocks, strikes and stabs, along with more complex spins and trapping movements. Students learn to coordinate their timing and direction, as they work together with long weapons in the dojo</p>
+                <p>The spear is a long, light, flexible, waxwood staff, with a sharp metal tip. (We practice without the sharp metal tip to prevent damage to the floor and each other.) The spear forms incorporate the basic spear moves of thrusts, blocks, strikes and stabs, along with more complex spins and trapping movements. Students learn to coordinate their timing and direction, as they work closely together with long weapons in the dojo<./p>
         
-                <p><img src="images/Tai-Chi-Fans-1-June-2019-800px.jpg" alt="Tai Chi Fan Practice" width="200" />
+                <p><img src="images/Spear-Form-August-2018-800px.jpg" alt="Spear Practice" width="200" />
                 </p>
 
             @elseif ($games['goal'] == "Jo (Short Staff)")
@@ -93,14 +93,14 @@
                  
             @elseif ($games['goal'] == "Lightening Sabre")
         
-                <p>The Lightening Sabre is a light, thin, flexible metal sword. The form is performed at a fast speed and includes stabs, slices, turns, kicks and jumps. The flexing sword catches and reflects the light and the form is performed.</p>
+                <p>The Lightening Sabre is a light, thin, flexible metal sword. The form is performed at a fast speed and includes stabs, slices, turns, kicks and jumps. The flexing sword catches and reflects the light as the form is performed.</p>
                 
                 <p><img src="images/mpv-lightening-sabre-August-2019-800px.jpg" alt="Lightening Sabre Practice" width="200" />
                 </p>
 
             @elseif ($games['goal'] == "Sai")
         
-                <p>The Sai are a set of two metal, Okinawan farm implements. The sai forms includes many flips, traps, strikes, blocks and stabs. They help the student develop hand dexterity and arm strength.</p>
+                <p>The Sai are a set of two metal, Okinawan farm implements. The sai forms include many flips, traps, strikes, blocks and stabs. They help the student develop hand dexterity and arm strength.</p>
                 
                 <p><img src="images/Dennis-Sai-Aug-2018.jpg" alt="Sai Practice" width="200" />
                 </p>
@@ -122,7 +122,7 @@
  
             @elseif ($games['goal'] == "Two-Person Form")
                 
-                <p>The Two-Person Tai Chi Form is a surprisingly complex, dancelike form. This form teaches the student to apply the Tai Chi strikes, blocks and kicks in coordination with an opponent. The skills of footwork, timing and the proper use of distance under varying conditions are developed.</p>
+                <p>The Two-Person Tai Chi Form is graceful and dancelike, yet surprisingly complex to learn. This form teaches the student to apply the Tai Chi strikes, blocks and kicks in coordination with a partner. The skills of footwork, timing and the proper use of distance under varying conditions are developed.</p>
         
                 <p><img src="images/Tai-Chi-Dance-Sept-2018.jpg" alt="Two-Person Tai Chi Form" width="200" />
                 </p>
