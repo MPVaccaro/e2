@@ -102,8 +102,6 @@
             @endif       
         
         <hr>
-        <a href='/results'>&larr; Go back to the game results list.</a>
-       
-        
+        <a href='/results'>&larr; Go back to the game results list.</a>            
     </main>
 @endsection

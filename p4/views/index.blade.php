@@ -1,7 +1,7 @@
 @extends('templates.master')
 
 @section('title')
-Home
+    Home
 @endsection
 
 @section('body')

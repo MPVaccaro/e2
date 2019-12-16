@@ -57,6 +57,5 @@
             <button type='submit'>Click here to take your Tai Chi class
             </button>
         </form> 
-       </main> 
-
+    </main> 
 @endsection

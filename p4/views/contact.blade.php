@@ -5,8 +5,7 @@
 @endsection
 
 @section('body')
-    <main>
-        
+    <main>        
         <h1>Tai Chi Class Info</h1>
 
         <p><br><b id="special1" >You are Invited to Try One Free Class!</b><br>

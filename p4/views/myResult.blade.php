@@ -6,13 +6,12 @@
 
 @section('body')
     <main>
-        
         <h3>Here's Your Result:</h3>
         
-            <div class='review'>            
-            <b id = "special3">You Just Learned {{ $games['section'] }} </b>     
-            <br>
-            </div>
+        <div class='review'>            
+        <b id = "special3">You Just Learned {{ $games['section'] }} </b>     
+        <br>
+        </div>
 
             @if ($games['result'] == "Is Ready for the Next Move in the Tai Chi Form") 
                
@@ -36,12 +35,12 @@
                 </p>                
     
              @endif
-       
-       
+        
         <br>
         <hr>    
         <br>
-            Since you were interested in<b id="special2"> {{ $games['goal'] }}</b>, here is some more information about it:</p>
+        <p>Since you were interested in<b id="special2"> {{ $games['goal'] }}</b>, here is some more information about it:
+        </p>
         
             @if ($games['goal'] == "Escrima Sticks") 
                
@@ -137,12 +136,9 @@
                 
             @endif
                    
-        
         <br>
         <hr>  
         <br>        
-        <a href='/results'>See all Game Results &rarr;</a>
-        
-      
+        <a href='/results'>See all Game Results &rarr;</a>         
     </main>
 @endsection
