@@ -24,8 +24,8 @@
 * Summary: Game players provide us their name, their reasons for trying Tai Chi and the "goal" or other aspect of the martial arts that sounds the most interesting to them. This is a helpful introduction to the wider range of the martial arts for the potential student, and it provides feedback to us about what students find most interesting.
 
 ## Outside resources
-I referred w3schools.com for basic HTML and CSS review items.
+I referred to [w3schools.com](https://w3schools.com) for basic HTML and CSS review items.
 
 ## Notes for instructor
 
-I formulated this project thinking that it might be a useful data-gathering feature in a future website for my capstone project.  Although I am a long way from this, I am trying to accomplish something towards this goal in each class that I take.  I used the menu bar and css code that I put together in the "Fundamentals of Website Development."  All the images and text in this project are mine.
+I formulated this project thinking that it might be a useful data-gathering feature in a future website for my capstone project.  Although I am a long way from this, I am trying to accomplish something towards this goal in each class that I take.  I used the menu bar and css code that I put together in the "Fundamentals of Website Development" class.  All the images and text in this project are mine.
