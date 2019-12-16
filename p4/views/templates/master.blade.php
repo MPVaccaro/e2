@@ -19,7 +19,7 @@
 <body>
 
 <header>
-    <img id='logo' src='/images/NS Logo TC KF Energy_Square_Reduced Size.png' alt='Nabi Su Logo'>
+    <img id='logo' src='/images/NS-Logo-TC-KF-Energy-Square-Reduced-Size.png' alt='Nabi Su Logo'>
     
     <div id="cssmenu">
 	  
