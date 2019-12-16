@@ -15,8 +15,8 @@
         
     <h3>Here are the Results for all Games Played:</h3>
     <p><i>(Click the link to get full details about any particular game.)</i>
-    <hr>
     </p>
+    <hr>    
 
     @foreach($games as $game)
         <div class='review'>   

@@ -24,7 +24,7 @@
         Four Corners<br>
         Fair Lady Works the Shuttles<br>
         <br>    
-        </i> 
+        </i>
         
         <p>After you learn a section of the form, we will tell you more about an aspect of Nabi Su Martial Arts training that might interest you.</p>
             

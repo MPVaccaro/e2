@@ -99,12 +99,11 @@
                 </p>
                 <p id = "special1"><b>Zazen</b> is sitting meditation that is silent and still, focusing on breathing and mindfulness. Your posture is powerfully erect. Your deepening breathing generates internal energy. Your intuition comes alive with the silence of your mind. You are relaxed and centered.</p>
                 
-            @endif
-        <p>        
+            @endif       
+        
         <hr>
-        <br>
         <a href='/results'>&larr; Go back to the game results list.</a>
-        </p>
+       
         
     </main>
 @endsection

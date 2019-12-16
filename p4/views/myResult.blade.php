@@ -8,7 +8,7 @@
     <main>
         
         <h3>Here's Your Result:</h3>
-        <p>
+        
             <div class='review'>            
             <b id = "special3">You Just Learned {{ $games['section'] }} </b>     
             <br>
@@ -36,8 +36,8 @@
                 </p>                
     
              @endif
-        </p>
-        <p>
+       
+       
         <br>
         <hr>    
         <br>
@@ -137,12 +137,12 @@
                 
             @endif
                    
-        <p>
+        
         <br>
         <hr>  
         <br>        
         <a href='/results'>See all Game Results &rarr;</a>
-        </p>    
+        
       
     </main>
 @endsection
