@@ -13,7 +13,9 @@
             <font color='red'> Thank you for your reason, {{ $newName }}.<br>Now you can play the game!</font><br><br>
             <h3><a href='/game' title="Game"> Click here to begin the game.</a></h3><br>
             </div>
-
+            <br>
+            <hr>
+        
         @endif 
 
         @if($app->errorsExist())
