@@ -14,8 +14,10 @@
             <h3><a href='/game' title="Game"> Click here to begin the game.</a></h3><br>
             </div>
             <br>
+            <br>
             <hr>
-        
+            <br>
+            <br>
         @endif 
 
         @if($app->errorsExist())
@@ -28,7 +30,7 @@
 
             <h1>Play Now!
             </h1>    
-            <p>In order to play the Tai Chi game, first tell us why you are interested in Tai Chi.<br></p>
+            <p>In order to play the Tai Chi game, first tell us your name and why you are interested in Tai Chi.<br></p>
 
         <form method='POST' id='form' action='/save-new-reason'>
             <h6 ><i>Why are You Interested in Tai Chi?</i></h6>
